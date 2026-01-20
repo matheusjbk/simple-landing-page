@@ -60,3 +60,27 @@ a {
 p {
   margin-bottom: 3rem;
 }
+
+table {
+  border-collapse: collapse;
+  min-width: 36rem;
+  width: 100%;
+}
+
+table caption {
+  font-style: italic;
+  font-size: 1.6rem;
+  text-align: left;
+}
+
+table td,
+table th {
+  border: 0.1rem solid var(--thirdy-color);
+  padding: 1rem;
+  white-space: nowrap;
+}
+
+thead th,
+tfoot td {
+  background: var(--thirdy-color);
+}

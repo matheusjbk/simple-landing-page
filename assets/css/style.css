@@ -29,7 +29,7 @@
 .intro-content {
   display: flex;
   flex-flow: column wrap;
-  width: 64rem;
+  max-width: 64rem;
   min-height: 100vh;
   justify-content: center;
   text-align: center;
@@ -96,4 +96,13 @@
 
 .gallery-img img:hover {
   transform: translate(-3%, 3%) scale(1.2) rotate(5deg);
+}
+
+.pricing-content {
+  max-width: 64rem;
+  min-height: 100vh;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
 }
