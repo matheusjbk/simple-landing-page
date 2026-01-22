@@ -201,10 +201,10 @@
 
 .back-to-top {
   position: fixed;
-  bottom: 2rem;
-  right: 2rem;
-  width: 4rem;
-  height: 4rem;
+  bottom: 3rem;
+  right: 3rem;
+  width: 5rem;
+  height: 5rem;
   display: flex;
   justify-content: center;
   align-items: center;
