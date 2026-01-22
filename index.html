@@ -37,20 +37,36 @@
     />
   </head>
   <body>
-    <aside>
-      <nav class="menu white-bg">
-        <div class="main-content menu-content">
-          <h1><a href="#home">LOGO</a></h1>
+    <input
+      id="close-menu"
+      class="close-menu"
+      type="checkbox"
+      role="button"
+      aria-label="Close menu"
+      aria-pressed="undefined"
+    />
+    <label
+      class="close-menu-label"
+      for="close-menu"
+      title="close-menu"
+    ></label>
 
-          <ul>
+    <aside class="menu white-bg">
+      <div class="main-content menu-content">
+        <h1 onclick="getElementById('close-menu').checked = false">
+          <a href="#home">LOGO</a>
+        </h1>
+
+        <nav>
+          <ul onclick="getElementById('close-menu').checked = false">
             <li><a href="#intro">intro</a></li>
             <li><a href="#top3">top 3</a></li>
             <li><a href="#gallery">gallery</a></li>
             <li><a href="#pricing">pricing</a></li>
             <li><a href="#contact">contact</a></li>
           </ul>
-        </div>
-      </nav>
+        </nav>
+      </div>
     </aside>
 
     <div class="menu-spacing"></div>
@@ -372,5 +388,11 @@
         >
       </p>
     </footer>
+
+    <a
+      href="#home"
+      class="back-to-top white-bg"
+      >▲</a
+    >
   </body>
 </html>

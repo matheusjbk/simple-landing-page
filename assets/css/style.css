@@ -194,3 +194,25 @@
 .heart {
   color: var(--secondary-color);
 }
+
+.close-menu {
+  display: none;
+}
+
+.back-to-top {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  width: 4rem;
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0.2rem solid var(--primary-color);
+  border-radius: 50%;
+  transition: all 200ms ease-in-out;
+}
+
+.back-to-top:hover {
+  background: #666;
+}

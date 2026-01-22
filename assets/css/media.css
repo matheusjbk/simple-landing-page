@@ -33,6 +33,51 @@
   .contact-content .contact-form {
     margin-top: var(--gap);
   }
+
+  .menu {
+    bottom: 0;
+    text-align: center;
+    display: none;
+  }
+
+  .menu-content,
+  .menu-content ul {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .menu-content {
+    height: 100vh;
+  }
+
+  .close-menu-label::after {
+    content: "☰";
+    position: fixed;
+    z-index: 2;
+    top: 2rem;
+    right: 2rem;
+    background: var(--primary-color);
+    color: var(--white-color);
+    padding: 0.5rem;
+    font-size: 3rem;
+    line-height: 3rem;
+    width: 3rem;
+    height: 3rem;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  .close-menu:checked ~ .menu {
+    display: block;
+  }
+
+  .close-menu:checked ~ .close-menu-label::after {
+    content: "×";
+  }
+
+  .menu-spacing {
+    display: none;
+  }
 }
 
 @media (max-width: 575px) {
@@ -43,5 +88,26 @@
 
   .top3-content > .grid {
     grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 435px) {
+  .grid > .gallery-img img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .home-text-content h2 {
+    font-size: 6rem;
+  }
+}
+
+@media (max-width: 380px) {
+  .home-text-content h2,
+  .intro-content h2,
+  .top3-content h2,
+  .gallery-content h2,
+  .pricing-content h2 {
+    font-size: 5rem;
   }
 }
